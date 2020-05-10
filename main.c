@@ -20,25 +20,26 @@
 
 #include <stdio.h>
 
-/* This function returns the arithmentic mean of a, b and c.*/
-
 float average(float a, float b, float c)
 {
-  return 0;
+   float x;
+   x=(a+b+c)/3;
+    
+   return x;
 }
 
-/* This program outputs the average of three values. */
 
 int main()
 {
-  float v1, v2, v3;   /* Input variables. */ 
-  float result;       /* Output variable. */
-
+  float v1, v2, v3;    
+  float result;       
+  
   v1 = 10;
   v2 = 20;
   v3 = 60; 
+ 
+  result = average(v1,v2,v3);
   
-  result = average (v1, v2, v3);
-
+  printf ("Media aritmetica de v1, v2 e v3: %1.2f", result );
   return 0 ;
 }
